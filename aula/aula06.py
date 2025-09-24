@@ -1,0 +1,11 @@
+n1=int(input("digite um valor:"))
+n2=int(input("digite um segundo numero para efetuarmos a operação:"))
+r=n1+n2
+print('a soma entre', n1, " mais ", n2, " é ", r)
+print("ou")
+print("a soma entre {} e {} vale {}".format(n1,n2,r))
+print("{}".format(r).islower())
+print("{}".format(r).isdigit())
+print("{}".format(r).isalpha())
+print("{}".format(r).isalnum())
+print("{}".format(r).isnumeric())

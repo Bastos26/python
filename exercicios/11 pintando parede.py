@@ -1,0 +1,5 @@
+print("agora iremos calcular a área da uma parede e calcular tambem a quantidade de tinta necessaria para pinta-la")
+n7=float(input("digite a largura da parede em metros:"))
+n77=float(input("agora digita a altura da parede:"))
+print(" a área da parede , em metros é {}".format(n7*n77))
+print("considerando que 1lt de tinta pinte 2m quadrados, a quantidade de tinta para pintar toda a parede é {} ".format((n7*n77)/2))

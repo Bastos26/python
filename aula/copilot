@@ -1,0 +1,22 @@
+# O que eu usei foi uma f-string, que é uma forma prática de interpolar variáveis dentro de uma string em Python. Basta colocar um f antes das aspas e inserir a variável entre chaves {}.
+nome = "Maria"
+print(f"Olá, {nome}!")
+
+pessoa = {'nome': 'Lucas', 'idade': 30}
+print(pessoa['nome'])  # Retorna: Lucas
+
+#As aspas simples indicam uma string, que é o nome da chave no dicionário.
+
+#Os colchetes são a sintaxe padrão em Python para buscar um valor dentro de um dicionário por meio da chave correspondente.
+
+Quando eu digo “chave” em termos de estrutura de dados em Python (como um dicionário), estou me referindo ao nome que identifica e acessa um determinado valor armazenado.
+
+Por exemplo, neste dicionário:
+
+python
+dados = {'preco': 32.63, 'nome': 'PETROBRAS'}
+'preco' é a chave
+
+32.63 é o valor associado a essa chave
+
+Ou seja, a chave é como a "etiqueta" que usamos para localizar exatamente o dado que queremos. É isso mesmo que você pensou — o elemento específico que buscamos
