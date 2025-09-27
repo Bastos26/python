@@ -56,3 +56,37 @@ eu atualizei as variaveis que usava como referencia , e se os numeros colocados 
 , apagava a lista dos nomes e introduzia o nome da pessoa nova que era mais pesada / leve 
 e depois usei um elif para só colocar caso o peso maximo seja igual ao peso dessa pessoa
 esse custou um pouco rs"""
+#obs exemplo.append(exemplo)->aprendemos que isso é errado porque cria uma ligação , fazer isso (exem1=exem2=[] )
+#é a mesma coisa e não pode
+"""
+resolução do guanabara
+temp = []
+princ = []
+mai = men = 0
+whhile True:
+    temp.append(str(input('nome:')))
+    temp.append(float(input('peso:')))
+    if len(princ) == 0:
+        mai = men = temp[1]
+    else:
+        if temp[1] > mai:
+            mai = temp[1]
+        if temp[1] < men:
+            men = temp[1]
+    princ.append(temp[:])
+    temp.clear()
+    resp = str(input('quer continuar ? [S/N]))
+    if resp in 'Nn' :
+        break
+print('-='*30)
+print(f'ao todo , você cadastrou {len(princ)} pessoas.')
+print(f'o maior peso foi de {mai}kg , peso de ',end='')
+for o in princ :
+    if p[1] == mai:
+        print(f'[{p[0]}] ', end='')
+print()
+print(f'o menor peso foi de {men}kg, peso de ',end='')
+for p in princ:
+    if p[1] == men:
+        print(f'[{p[0]}] ',end='')
+print()"""
