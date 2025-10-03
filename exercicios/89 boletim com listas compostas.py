@@ -46,3 +46,5 @@ while True:
             print(f'Notas de {ficha[opc][0]} são {ficha[opc][1]}')
 print('<<< VOLTESEMPRE >>>')        
 """
+#O enumerate() é uma função embutida que permite iterar sobre uma lista
+# (ou outro iterável) retornando o índice e o valor de cada item ao mesmo tempo.
