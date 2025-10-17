@@ -20,3 +20,31 @@ soma(4,5)  # tambem pode ser soma(a=4, b=5) deixando explicito e poderia mudar d
 soma(8,9)  #obs: se você for explicitar , tem que fazer com todos os argumentos
 soma(2,1)
 
+def contador(*num): # empacotamento de parâmetros
+    for valor in num:
+        print(f'{valor} ',end='')
+    print('fim')
+    tam = len(num)
+    print(f'recebi os valores {num} e são ao todo {tam}')
+contador(2,1,7)
+contador(8,0)
+contador(4,4,7,6,2)
+
+def dobra(lst):
+    pos = 0
+    while pos < len(lst):
+        lst[pos]*=2
+        pos=pos + 1
+
+valores = [6,3,9,1,0,2]
+dobra(valores)
+print(valores)
+
+def soma(*valores):
+    s = 0
+    for c in valores:
+        s = s + c
+    print(f' somando os valores {c} , temos {s}')
+
+soma(5,2)
+soma(2,9,4)
