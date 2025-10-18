@@ -48,3 +48,17 @@ def soma(*valores):
 
 soma(5,2)
 soma(2,9,4)
+
+#return é muito útil , ele meio que nos ajudar a "retirar" o valor que a função nos proporciona
+"""
+def calcular_imc(peso, altura):
+    imc = peso / (altura ** 2)  # cálculo interno
+    return imc  # entrega o valor para fora
+
+# Aqui, o valor retornado é atribuído à variável 'resultado'
+resultado = calcular_imc(70, 1.75)
+
+# Agora podemos usar esse valor como quisermos
+print(resultado)  # imprime o IMC
+
+"""
