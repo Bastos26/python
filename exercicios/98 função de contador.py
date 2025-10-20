@@ -1,19 +1,59 @@
+import time
 def contador(i, f, p):
-    while i != f:
-        i = i + p
-        print(i)
+    if i < f:
+        print('~~'*15)
+        for c in range(i, f+1, p):
+            time.sleep(0.5)
+            print(c, end=' ')
+        print()
+    if i > f:
+        for c in range(i, f-1, -p):
+            time.sleep(0.5)
+            print(c,end=' ')
+        print()
+    print('~~' * 15)
 
 
 # programa principal
 contador(1, 10, 1)
 contador(10, 0, 2)
-inicio = float(input('Início: '))
-fim = float(input('Fim: '))
-passo = float(input('Passo: '))
+inicio = int(input('Início: '))
+fim = int(input('Fim: '))
+passo = int(input('Passo: '))
 contador(inicio, fim, passo)
-for c in range(0,10,2):
-    print(c,end='')
-#no exercicio eu estou tendo dificuldades em fazer o sistema de contagem , acredito que o programa principal esteja ok
-#a primeira duvida era se poderiamos colocar parâmetros formais, mais que um , e pelo visto sim , então acredito que sempre sera três
-#tentei utilizar o if para contar mas acredito que devo usar o for para fazer a contagem
-#não lembro onde eu vi para fazer contagens regressivas , tenho que ver onde , acredito que n falta muito para terminar o exercicio
+"""resolução do guanabara
+from time import sleep
+
+def contador(i, f, p):
+    if p < 0:
+        p *= -1
+    if p == 0:
+        p = 1
+    print('-=' * 20)
+    print(f'Contagem de {i} até {f} de {p} de {p}')
+    sleep(2.5)
+    
+    if i < f:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ', end='', flush=True)
+            sleep(0.5)
+            cont += p
+        print('FIM!')
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ',end='', flush=True)
+            sleep(0.5)
+            cont -= p
+        print('FIM!')
+        
+#programa principal
+contador(1, 10, 1)
+contador(10, 0, 2)
+print('-=' * 20)
+print('Agora é sua vez de personalizar a contagem')
+ini = int(input('Início : '))
+fim =int(input('Fim : '))
+pas = int(input('Passo : '))
+contador(ini, fim, pas)"""
