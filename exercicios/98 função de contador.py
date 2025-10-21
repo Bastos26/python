@@ -14,7 +14,6 @@ def contador(i, f, p):
     print('~~' * 15)
 
 
-# programa principal
 contador(1, 10, 1)
 contador(10, 0, 2)
 inicio = int(input('Início: '))
