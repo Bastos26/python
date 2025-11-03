@@ -21,7 +21,8 @@ registro(nome,gol)
 #o meu grande problema na questão foi o tratamento dos tipos de variáveis errados
 #para ser mais preciso , quando apertamos enter no gol
 #tirei o int porque assim não dava o erro 10 e o programa poderia continuar para eu o tratar
-
+#estava com probremas de fazer a distinção do , se o valor fosse um número , como ele estava sendo tratado com str, transformar em int de novo
+#quando vi o professor usar o isnumeric(): eu vi que isso podia ter me ajudado naquela hora
 """
 resolução do guanabara
 def ficha (jog='<desconhecido>',gol=0):
