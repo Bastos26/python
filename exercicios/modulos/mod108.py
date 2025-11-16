@@ -10,3 +10,24 @@ def porcentagem(n):
     print(f'Aumentando em {p}%, temos R${n+por:.2f}'.replace(".","."))
 
 #👉 Então: replace não é uma função isolada, mas sim um método da classe str. Ele só funciona em strings, e é por isso que usamos f"{valor:.2f}" (que gera uma string) antes de aplicar .replace(".", ",").
+#como o exercicio pede uma nova função , meio que esse não é a resposta adequada
+
+"""resolução do guanabra
+def aumentar(preço=0,taxa=0):
+    res = preço + (preço * taxa/100)
+    return res
+
+def diminuir(preço=0,taxa=0):
+    res = preço - (preço * taxa/100)
+    return res
+
+def dobro(preço=0):
+    res = preço * 2
+    return = res
+
+def metade(preço=0):
+    res = preço / 2
+    return res
+
+def moeda(preço=0, moeda=R$):
+    return f'{moeda}{preço:>.2f}'.replace('.',',')"""
